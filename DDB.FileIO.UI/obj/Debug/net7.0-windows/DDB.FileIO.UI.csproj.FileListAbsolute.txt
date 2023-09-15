@@ -1,0 +1,16 @@
+C:\Users\Dean\Desktop\FVTC\C#Intermediate\Projects\DDB.FileIO\DDB.FileIO.UI\bin\Debug\net7.0-windows\DDB.FileIO.UI.exe
+C:\Users\Dean\Desktop\FVTC\C#Intermediate\Projects\DDB.FileIO\DDB.FileIO.UI\bin\Debug\net7.0-windows\DDB.FileIO.UI.deps.json
+C:\Users\Dean\Desktop\FVTC\C#Intermediate\Projects\DDB.FileIO\DDB.FileIO.UI\bin\Debug\net7.0-windows\DDB.FileIO.UI.runtimeconfig.json
+C:\Users\Dean\Desktop\FVTC\C#Intermediate\Projects\DDB.FileIO\DDB.FileIO.UI\bin\Debug\net7.0-windows\DDB.FileIO.UI.dll
+C:\Users\Dean\Desktop\FVTC\C#Intermediate\Projects\DDB.FileIO\DDB.FileIO.UI\bin\Debug\net7.0-windows\DDB.FileIO.UI.pdb
+C:\Users\Dean\Desktop\FVTC\C#Intermediate\Projects\DDB.FileIO\DDB.FileIO.UI\obj\Debug\net7.0-windows\DDB.FileIO.UI.csproj.GenerateResource.cache
+C:\Users\Dean\Desktop\FVTC\C#Intermediate\Projects\DDB.FileIO\DDB.FileIO.UI\obj\Debug\net7.0-windows\DDB.FileIO.UI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dean\Desktop\FVTC\C#Intermediate\Projects\DDB.FileIO\DDB.FileIO.UI\obj\Debug\net7.0-windows\DDB.FileIO.UI.AssemblyInfoInputs.cache
+C:\Users\Dean\Desktop\FVTC\C#Intermediate\Projects\DDB.FileIO\DDB.FileIO.UI\obj\Debug\net7.0-windows\DDB.FileIO.UI.AssemblyInfo.cs
+C:\Users\Dean\Desktop\FVTC\C#Intermediate\Projects\DDB.FileIO\DDB.FileIO.UI\obj\Debug\net7.0-windows\DDB.FileIO.UI.csproj.CoreCompileInputs.cache
+C:\Users\Dean\Desktop\FVTC\C#Intermediate\Projects\DDB.FileIO\DDB.FileIO.UI\obj\Debug\net7.0-windows\DDB.FileIO.UI.dll
+C:\Users\Dean\Desktop\FVTC\C#Intermediate\Projects\DDB.FileIO\DDB.FileIO.UI\obj\Debug\net7.0-windows\refint\DDB.FileIO.UI.dll
+C:\Users\Dean\Desktop\FVTC\C#Intermediate\Projects\DDB.FileIO\DDB.FileIO.UI\obj\Debug\net7.0-windows\DDB.FileIO.UI.pdb
+C:\Users\Dean\Desktop\FVTC\C#Intermediate\Projects\DDB.FileIO\DDB.FileIO.UI\obj\Debug\net7.0-windows\DDB.FileIO.UI.genruntimeconfig.cache
+C:\Users\Dean\Desktop\FVTC\C#Intermediate\Projects\DDB.FileIO\DDB.FileIO.UI\obj\Debug\net7.0-windows\ref\DDB.FileIO.UI.dll
+C:\Users\Dean\Desktop\FVTC\C#Intermediate\Projects\DDB.FileIO\DDB.FileIO.UI\obj\Debug\net7.0-windows\DDB.FileIO.UI.frmFileIO.resources
