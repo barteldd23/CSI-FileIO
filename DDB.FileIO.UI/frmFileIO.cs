@@ -73,9 +73,9 @@ namespace DDB.FileIO.UI
         }
 
         public DialogResult checkSaveChanges()
-            //Method returns a Dialog result: yes, no, cancel.
-            //Purpose is to determine if the user hits cancel, Then dont execute the code like New File or Open File.
-            //Then Returns back to form without saving and without doing anything.
+        //Method returns a Dialog result: yes, no, cancel.
+        //Purpose is to determine if the user hits cancel, Then dont execute the code like New File or Open File.
+        //Then Returns back to form without saving and without doing anything.
         {
             DialogResult result = DialogResult.No;
             //Check if document has been changed
@@ -90,7 +90,7 @@ namespace DDB.FileIO.UI
                 {
                     SaveChanges();
                 }
-                
+
             }
             return result;
 
@@ -220,8 +220,8 @@ namespace DDB.FileIO.UI
             lblTimer2.Spring = true;
             lblStatus.Spring = true;
 
-            lblTimer2.Alignment = ToolStripItemAlignment.Right;
-            lblStatus.Alignment = ToolStripItemAlignment.Left;
+            //lblTimer2.Alignment = ToolStripItemAlignment.Right;
+            //lblStatus.Alignment = ToolStripItemAlignment.Left;
             //lblTimer2.Padding = new Padding(0);
             timer1.Enabled = true;
         }

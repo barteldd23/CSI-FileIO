@@ -110,6 +110,7 @@
             lblStatus.Name = "lblStatus";
             lblStatus.Size = new Size(65, 17);
             lblStatus.Text = "Status here";
+            lblStatus.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // lblTimer
             // 
@@ -121,6 +122,7 @@
             lblTimer2.Name = "lblTimer2";
             lblTimer2.Size = new Size(37, 17);
             lblTimer2.Text = "Timer";
+            lblTimer2.TextAlign = ContentAlignment.MiddleRight;
             // 
             // txtTextArea
             // 
