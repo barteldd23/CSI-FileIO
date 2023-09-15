@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             menuStrip1 = new MenuStrip();
             mnuFile = new ToolStripMenuItem();
             mnuFileNew = new ToolStripMenuItem();
@@ -37,7 +38,10 @@
             mnuHelp = new ToolStripMenuItem();
             statusStrip1 = new StatusStrip();
             lblStatus = new ToolStripStatusLabel();
+            lblTimer = new ToolStripStatusLabel();
+            lblTimer2 = new ToolStripStatusLabel();
             txtTextArea = new RichTextBox();
+            timer1 = new System.Windows.Forms.Timer(components);
             menuStrip1.SuspendLayout();
             statusStrip1.SuspendLayout();
             SuspendLayout();
@@ -47,7 +51,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { mnuFile, mnuHelp });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(429, 24);
+            menuStrip1.Size = new Size(462, 24);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -61,29 +65,30 @@
             // mnuFileNew
             // 
             mnuFileNew.Name = "mnuFileNew";
-            mnuFileNew.Size = new Size(180, 22);
+            mnuFileNew.Size = new Size(114, 22);
             mnuFileNew.Text = "&New";
             mnuFileNew.Click += mnuFileNew_Click;
             // 
             // mnuFileOpen
             // 
             mnuFileOpen.Name = "mnuFileOpen";
-            mnuFileOpen.Size = new Size(180, 22);
+            mnuFileOpen.Size = new Size(114, 22);
             mnuFileOpen.Text = "&Open";
             mnuFileOpen.Click += mnuFileOpen_Click;
             // 
             // mnuFileSave
             // 
             mnuFileSave.Name = "mnuFileSave";
-            mnuFileSave.Size = new Size(180, 22);
+            mnuFileSave.Size = new Size(114, 22);
             mnuFileSave.Text = "&Save";
             mnuFileSave.Click += mnuFileSave_Click;
             // 
             // mnuFileSaveAs
             // 
             mnuFileSaveAs.Name = "mnuFileSaveAs";
-            mnuFileSaveAs.Size = new Size(180, 22);
+            mnuFileSaveAs.Size = new Size(114, 22);
             mnuFileSaveAs.Text = "Save &As";
+            mnuFileSaveAs.Click += mnuFileSaveAs_Click;
             // 
             // mnuHelp
             // 
@@ -93,10 +98,10 @@
             // 
             // statusStrip1
             // 
-            statusStrip1.Items.AddRange(new ToolStripItem[] { lblStatus });
-            statusStrip1.Location = new Point(0, 451);
+            statusStrip1.Items.AddRange(new ToolStripItem[] { lblStatus, lblTimer, lblTimer2 });
+            statusStrip1.Location = new Point(0, 481);
             statusStrip1.Name = "statusStrip1";
-            statusStrip1.Size = new Size(429, 22);
+            statusStrip1.Size = new Size(462, 22);
             statusStrip1.TabIndex = 1;
             statusStrip1.Text = "statusStrip1";
             // 
@@ -106,20 +111,37 @@
             lblStatus.Size = new Size(65, 17);
             lblStatus.Text = "Status here";
             // 
+            // lblTimer
+            // 
+            lblTimer.Name = "lblTimer";
+            lblTimer.Size = new Size(0, 17);
+            // 
+            // lblTimer2
+            // 
+            lblTimer2.Name = "lblTimer2";
+            lblTimer2.Size = new Size(37, 17);
+            lblTimer2.Text = "Timer";
+            // 
             // txtTextArea
             // 
-            txtTextArea.Location = new Point(12, 39);
+            txtTextArea.Dock = DockStyle.Fill;
+            txtTextArea.Location = new Point(0, 24);
             txtTextArea.Name = "txtTextArea";
-            txtTextArea.Size = new Size(399, 393);
+            txtTextArea.Size = new Size(462, 457);
             txtTextArea.TabIndex = 2;
             txtTextArea.Text = "";
             txtTextArea.TextChanged += txtTextArea_TextChanged;
+            // 
+            // timer1
+            // 
+            timer1.Interval = 1000;
+            timer1.Tick += timer1_Tick;
             // 
             // frmFileIO
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(429, 473);
+            ClientSize = new Size(462, 503);
             Controls.Add(txtTextArea);
             Controls.Add(statusStrip1);
             Controls.Add(menuStrip1);
@@ -127,6 +149,7 @@
             Name = "frmFileIO";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "File I/O";
+            Load += frmFileIO_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             statusStrip1.ResumeLayout(false);
@@ -147,5 +170,8 @@
         private StatusStrip statusStrip1;
         private ToolStripStatusLabel lblStatus;
         private RichTextBox txtTextArea;
+        private System.Windows.Forms.Timer timer1;
+        private ToolStripStatusLabel lblTimer;
+        private ToolStripStatusLabel lblTimer2;
     }
 }
