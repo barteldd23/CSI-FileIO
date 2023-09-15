@@ -51,7 +51,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { mnuFile, mnuHelp });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(490, 24);
+            menuStrip1.Size = new Size(503, 24);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -99,9 +99,9 @@
             // statusStrip1
             // 
             statusStrip1.Items.AddRange(new ToolStripItem[] { lblStatus, lblTimer, lblTimer2 });
-            statusStrip1.Location = new Point(0, 514);
+            statusStrip1.Location = new Point(0, 524);
             statusStrip1.Name = "statusStrip1";
-            statusStrip1.Size = new Size(490, 22);
+            statusStrip1.Size = new Size(503, 22);
             statusStrip1.TabIndex = 1;
             statusStrip1.Text = "statusStrip1";
             // 
@@ -129,7 +129,7 @@
             txtTextArea.Dock = DockStyle.Fill;
             txtTextArea.Location = new Point(0, 24);
             txtTextArea.Name = "txtTextArea";
-            txtTextArea.Size = new Size(490, 490);
+            txtTextArea.Size = new Size(503, 500);
             txtTextArea.TabIndex = 2;
             txtTextArea.Text = "";
             txtTextArea.TextChanged += txtTextArea_TextChanged;
@@ -143,7 +143,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(490, 536);
+            ClientSize = new Size(503, 546);
             Controls.Add(txtTextArea);
             Controls.Add(statusStrip1);
             Controls.Add(menuStrip1);
