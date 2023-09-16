@@ -1,9 +1,13 @@
 namespace DDB.FileIO.UI
-{ // test after connection
+{ /*
+   * Dean Bartel
+   * 16 Sept 2023
+   * C# Intermediate File IO
+   */
     public partial class frmFileIO : Form
     {
-        const string INITIAL_DIRECTORY = @"C:\Users\Dean\Desktop\FVTC\C#Intermediate\";
-        string fileName = @"C:\Users\Dean\Desktop\FVTC\C#Intermediate\";
+        const string INITIAL_DIRECTORY = @"C:\Users\public\";
+        string fileName = @"C:\Users\public\";
         string strLastSavedText = string.Empty;
 
         public frmFileIO()
@@ -15,9 +19,10 @@ namespace DDB.FileIO.UI
         {
             var result = checkSaveChanges();
 
+            //Do stuff unless they selected cancel on the messagebox.
             if (result != DialogResult.Cancel)
             {
-                //load new frmFileIO
+                //reset frmFileIO
                 txtTextArea.Text = string.Empty;
                 fileName = INITIAL_DIRECTORY;
                 lblStatus.Text = string.Empty;
@@ -31,6 +36,7 @@ namespace DDB.FileIO.UI
         {
             var result = checkSaveChanges();
 
+            //Do stuff unless they selected cancel on the messagebox.
             if (result != DialogResult.Cancel)
             {
 
@@ -76,10 +82,11 @@ namespace DDB.FileIO.UI
         //Method returns a Dialog result: yes, no, cancel.
         //Purpose is to determine if the user hits cancel, Then dont execute the code like New File or Open File.
         //Then Returns back to form without saving and without doing anything.
+        //Selecting Yes saves changes - calls SaveChanges() function.
         {
             DialogResult result = DialogResult.No;
             //Check if document has been changed
-            if (txtTextArea.Text != string.Empty && txtTextArea.Text != strLastSavedText)
+            if (txtTextArea.Text != string.Empty || txtTextArea.Text != strLastSavedText)
             {
                 //prompt new form load to ask if you want to save
                 string message = "Would you like to save the current file?";
@@ -159,18 +166,21 @@ namespace DDB.FileIO.UI
         }
 
         private void txtTextArea_TextChanged(object sender, EventArgs e)
-        //Display Status message on to show if file is aved or not.
+        //Display Status message on to show if file is saved or not.
         {
+            //Not Saved and has changes to the starting file.
             if (strLastSavedText != txtTextArea.Text || (fileName == INITIAL_DIRECTORY && txtTextArea.Text != string.Empty))
             {
                 lblStatus.Text = $"{fileName} not saved.";
                 lblStatus.ForeColor = Color.OrangeRed;
             }
+            //May have typed, but deleted back to original.
             else if (strLastSavedText == txtTextArea.Text && strLastSavedText != string.Empty)
             {
                 lblStatus.Text = $"{fileName} No Changes";
                 lblStatus.ForeColor = Color.Blue;
             }
+            //File started as a new blank document and is still blank.
             else
             {
                 lblStatus.Text = string.Empty;
@@ -217,6 +227,7 @@ namespace DDB.FileIO.UI
 
         private void frmFileIO_Load(object sender, EventArgs e)
         {
+            
             lblTimer2.Spring = true;
             lblStatus.Spring = true;
 
